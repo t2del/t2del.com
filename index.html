@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>T2del</title>
-		<meta name="description" content="I am worthy, Responsive HTML5">
+		<meta name="description" content="Dennis Macapagal">
 		<meta name="author" content="t2del">
 
 		<!-- Mobile Meta -->
@@ -28,7 +28,7 @@
 		<!-- Plugins -->
 		<link href="css/animations.css" rel="stylesheet">
 
-		<!-- Worthy core CSS file -->
+		<!--  core CSS file -->
 		<link href="css/style.css" rel="stylesheet">
 
 		<!-- Custom css --> 
@@ -54,7 +54,7 @@
 
 							<!-- logo -->
 							<!-- <div class="logo smooth-scroll">
-								<a href="#banner"><img id="logo" src="images/logo.png" alt="Worthy"></a>
+								<a href="#banner"><img id="logo" src="images/logo.png" alt=""></a>
 							</div> -->
 
 							<!-- name-and-slogan -->
@@ -97,10 +97,10 @@
 											<ul class="nav navbar-nav navbar-right">
 												<li class="active"><a href="#banner">Home</a></li>
 												<li><a href="#about">About</a></li>
-												<li><a href="#services">Services</a></li>
+												<li class="hide"><a href="#services" >Services</a></li>
 												<li><a href="#portfolio">Portfolio</a></li>
-												<li><a href="#clients">Clients</a></li>
-												<li><a href="#contact">Contact</a></li>
+												<li class="hide"><a href="#clients">Clients</a></li>
+												<li class="hide"><a href="#contact">Contact</a></li>
 											</ul>
 										</div>
 
@@ -130,6 +130,20 @@
 						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
 							<h1 class="text-center">I am <span>Dennis Macapagal</span></h1>
 							<p class="lead text-center">Full-Stack Developer </p>
+							<div class=" text-center">								
+								<ul class="list-icons">
+									<li  class="hide"><i class="fa fa-map-marker pr-10"></i> One infinity loop, 54100</li>
+									<li><i class="fa fa-phone pr-10"></i> <a href="tel: +6588140252">88140252</a></li>
+									<li class="hide"><i class="fa fa-fax pr-10"></i> +00 1234567891 </li>
+									<li><i class="fa fa-envelope-o pr-10"></i> <a href="mailto: macapagal.dennis@gmail.com">macapagal.dennis@gmail.com</a></li>
+								</ul>
+								<ul class="social-links">
+									<li class="facebook"><a target="_blank" href="https://www.facebook.com/t2del/"><i class="fa fa-facebook"></i></a></li>
+									<li class="twitter"><a target="_blank" href="https://twitter.com/t2del"><i class="fa fa-twitter"></i></a></li>
+									<li class="skype"><a target="_blank" href="https://join.skype.com/invite/YVtbBwzGoXFE?fbclid=IwAR34rAK1GzC4k-4VccUKOiBuIyjRzjm0HHz2zzlEKrbA6ruG2jkLA6c9g5Y"><i class="fa fa-skype"></i></a></li>
+									<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/dennismacapagal/"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -231,9 +245,9 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-		<div class="section translucent-bg bg-image-1 blue">
+		<div class="section translucent-bg bg-image-1 blue hide">
 			<div class="container object-non-visible" data-animation-effect="fadeIn">
-				<h1 id="services"  class="text-center title">Worthy Services</h1>
+				<h1 id="services"  class="text-center title"> Services</h1>
 				<div class="space"></div>
 				<div class="row">
 					<div class="col-sm-6">
@@ -320,7 +334,7 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-		<div class="default-bg space blue">
+		<div class="default-bg space blue hide">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
@@ -333,11 +347,11 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-		<div class="section">
+		<div class="section blue">
 			<div class="container">
 				<h1 class="text-center title" id="portfolio">Portfolio</h1>
 				<div class="separator"></div>
-				<p class="lead text-center">Lorem ipsum dolor sit amet laudantium molestias similique.<br> Quisquam incidunt ut laboriosam.</p>
+				<!-- <p class="lead text-center">Lorem ipsum dolor sit amet laudantium molestias similique.<br> Quisquam incidunt ut laboriosam.</p> -->
 				<br>			
 				<div class="row object-non-visible" data-animation-effect="fadeIn">
 					<div class="col-md-12">
@@ -846,7 +860,7 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-		<div class="section translucent-bg bg-image-2 pb-clear">
+		<div class="section translucent-bg bg-image-2 pb-clear hide">
 			<div class="container object-non-visible" data-animation-effect="fadeIn">
 				<h1 id="clients" class="title text-center">Clients</h1>
 				<div class="space"></div>
@@ -985,7 +999,7 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-		<div class="default-bg space">
+		<div class="default-bg space hide">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
@@ -1004,31 +1018,26 @@
 			<!-- ================ -->
 			<div class="footer section">
 				<div class="container">
-					<h1 class="title text-center" id="contact">Contact Us</h1>
+					<h1 class="title text-center hide" id="contact">Contact</h1>
 					<div class="space"></div>
 					<div class="row">
 						<div class="col-sm-6">
-							<div class="footer-content">
-								<p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nam magnam natus tempora cumque, aliquam deleniti voluptatibus voluptas. Repellat vel, et itaque commodi iste ab, laudantium voluptas deserunt nobis.</p>
+							<div class="footer-content">								
 								<ul class="list-icons">
-									<li><i class="fa fa-map-marker pr-10"></i> One infinity loop, 54100</li>
-									<li><i class="fa fa-phone pr-10"></i> +00 1234567890</li>
-									<li><i class="fa fa-fax pr-10"></i> +00 1234567891 </li>
-									<li><i class="fa fa-envelope-o pr-10"></i> your@email.com</li>
+									<li  class="hide"><i class="fa fa-map-marker pr-10"></i> One infinity loop, 54100</li>
+									<li><i class="fa fa-phone pr-10"></i> +65 88140252</li>
+									<li class="hide"><i class="fa fa-fax pr-10"></i> +00 1234567891 </li>
+									<li><i class="fa fa-envelope-o pr-10"></i> <a href="mailto: macapagal.dennis@gmail.com">macapagal.dennis@gmail.com</a></li>
 								</ul>
 								<ul class="social-links">
-									<li class="facebook"><a target="_blank" href="https://www.facebook.com/pages/HtmlCoder/714570988650168"><i class="fa fa-facebook"></i></a></li>
-									<li class="twitter"><a target="_blank" href="https://twitter.com/HtmlcoderMe"><i class="fa fa-twitter"></i></a></li>
-									<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-									<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-									<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-									<li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
-									<li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
-									<li class="pinterest"><a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+									<li class="facebook"><a target="_blank" href="https://www.facebook.com/t2del/"><i class="fa fa-facebook"></i></a></li>
+									<li class="twitter"><a target="_blank" href="https://twitter.com/t2del"><i class="fa fa-twitter"></i></a></li>
+									<li class="skype"><a target="_blank" href="https://join.skype.com/invite/YVtbBwzGoXFE?fbclid=IwAR34rAK1GzC4k-4VccUKOiBuIyjRzjm0HHz2zzlEKrbA6ruG2jkLA6c9g5Y"><i class="fa fa-skype"></i></a></li>
+									<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/dennismacapagal/"><i class="fa fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-sm-6 hide">
 							<div class="footer-content">
 								<form role="form" id="footer-form">
 									<div class="form-group has-feedback">
@@ -1057,11 +1066,11 @@
 
 			<!-- .subfooter start -->
 			<!-- ================ -->
-			<div class="subfooter">
+			<div class="subfooter hide">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<p class="text-center">Copyright © 2016 Worthy by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>.</p>
+							<p class="text-center">Copyright © 2022</p>
 						</div>
 					</div>
 				</div>
