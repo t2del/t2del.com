@@ -9,6 +9,9 @@ File Description: Place here your custom CSS styles
 */
 
 
-.hide {
-    display: none;
+.profile-photo {
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 1px grey;
+    max-width: 300px;
+    margin: 0 auto;
 }
