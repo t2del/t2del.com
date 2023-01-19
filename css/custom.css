@@ -76,3 +76,21 @@ html {
 .isotope-item:nth-child(10) {
     transition-delay: 1000ms;
 }
+.isotope-item:nth-child(11) {
+    transition-delay: 1100ms;
+}
+.isotope-item:nth-child(12) {
+    transition-delay: 1200ms;
+}
+.isotope-item:nth-child(13) {
+    transition-delay: 1300ms;
+}
+.isotope-item:nth-child(14) {
+    transition-delay: 1400ms;
+}
+.isotope-item:nth-child(15) {
+    transition-delay: 1500ms;
+}
+.isotope-item:nth-child(16) {
+    transition-delay: 1600ms;
+}
