@@ -12,6 +12,13 @@ html {
     scroll-padding: 50px 0;
 }
 
+@media (min-width:1600px) {
+    .container {
+        max-width: 1600px;
+        width: 100%;
+    }
+}
+
 .profile-photo {
     border-radius: 50%;
     box-shadow: 0px 0px 15px 1px grey;
@@ -94,3 +101,4 @@ html {
 .isotope-item:nth-child(16) {
     transition-delay: 1600ms;
 }
+
