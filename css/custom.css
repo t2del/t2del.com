@@ -8,6 +8,9 @@ License: Creative Commons Attribution 3.0 License (https://creativecommons.org/l
 File Description: Place here your custom CSS styles
 */
 
+html {
+    scroll-padding: 50px 0;
+}
 
 .profile-photo {
     border-radius: 50%;
@@ -15,3 +18,31 @@ File Description: Place here your custom CSS styles
     max-width: 300px;
     margin: 0 auto;
 }
+
+.section {
+    height: 100vh;
+}
+@media (max-width:961px)  { 
+    .section {
+        height: auto;
+    }
+}
+
+.notshow {
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+@media(prefers-reduced-motion) {
+    .notshow {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
