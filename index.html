@@ -40,7 +40,7 @@
 		<div class="scrollBar1"><span></span></div>
 		<!-- scrollToTop -->
 		<!-- ================ -->
-		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+		<div class="scrollToTop" id="scrollToTop"><i class="icon-up-open-big"></i></div>
 
 		<!-- header start -->
 		<!-- ================ --> 
@@ -143,6 +143,7 @@
 									<li class="twitter"><a target="_blank" href="https://twitter.com/t2del"><i class="fa fa-twitter"></i></a></li>
 									<li class="skype"><a target="_blank" href="https://join.skype.com/invite/YVtbBwzGoXFE?fbclid=IwAR34rAK1GzC4k-4VccUKOiBuIyjRzjm0HHz2zzlEKrbA6ruG2jkLA6c9g5Y"><i class="fa fa-skype"></i></a></li>
 									<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/dennismacapagal/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/dennismacapagal/"><i class="fa fa-whatsapp"></i></a></li>
 									<li class="resume"><a target="_blank" href="https://docs.google.com/document/d/1A8VE6jIIv6r9vaGmvHT9hDhajwXAsImz/edit?usp=share_link&ouid=116872466953417214421&rtpof=true&sd=true" title="Resume"><i class="fa fa-download"></i></a></li>
 								</ul>
 							</div>
@@ -185,8 +186,8 @@
 							</div>
 						</div>
 						<div class="space"></div>
-						<!-- <h2>Becessitatibus quae beatae possimus ullam</h2>
-						<div class="row">
+						
+						<div class="row hide">
 							<div class="col-md-6">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi adipisci illo, voluptatum ipsam fuga error commodi architecto, laudantium culpa tenetur at id, beatae placeat deserunt iure quas voluptas fugit eveniet.</p>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ducimus explicabo quibusdam temporibus deserunt doloremque pariatur ea, animi a. Delectus similique atque eligendi, enim vel reiciendis deleniti neque aliquid, sit?</p>
@@ -238,7 +239,7 @@
 									</div>
 								</div>
 							</div>
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1256,11 +1257,11 @@
 
 			<!-- .subfooter start -->
 			<!-- ================ -->
-			<div class="subfooter hide">
+			<div class="subfooter">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<p class="text-center">Copyright © 2022</p>
+							<p class="text-center">Copyright © <span id="year"></span></p>
 						</div>
 					</div>
 				</div>
@@ -1269,6 +1270,8 @@
 
 		</footer>
 		<!-- footer end -->
+
+		<div id="ToTopHover"></div>
 
 		<!-- Jquery and Bootstap core js files -->
 		<script type="text/javascript" src="plugins/jquery.min.js"></script>
