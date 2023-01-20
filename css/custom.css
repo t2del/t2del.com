@@ -29,7 +29,7 @@ html {
 .section {
     height: 100vh;
 }
-@media (max-width:961px)  { 
+@media (max-width:1000px)  { 
     .section {
         height: auto;
     }
@@ -57,48 +57,88 @@ html {
     transition-delay: 100ms;
 }
 .isotope-item:nth-child(2) {
-    transition-delay: 200ms;
-}
-.isotope-item:nth-child(3) {
     transition-delay: 300ms;
 }
-.isotope-item:nth-child(4) {
-    transition-delay: 400ms;
-}
-.isotope-item:nth-child(5) {
-    transition-delay: 500ms;
-}
-.isotope-item:nth-child(6) {
+.isotope-item:nth-child(3) {
     transition-delay: 600ms;
 }
-.isotope-item:nth-child(7) {
-    transition-delay: 700ms;
-}
-.isotope-item:nth-child(8) {
-    transition-delay: 800ms;
-}
-.isotope-item:nth-child(9) {
+.isotope-item:nth-child(4) {
     transition-delay: 900ms;
 }
-.isotope-item:nth-child(10) {
-    transition-delay: 1000ms;
-}
-.isotope-item:nth-child(11) {
-    transition-delay: 1100ms;
-}
-.isotope-item:nth-child(12) {
+.isotope-item:nth-child(5) {
     transition-delay: 1200ms;
 }
-.isotope-item:nth-child(13) {
-    transition-delay: 1300ms;
-}
-.isotope-item:nth-child(14) {
-    transition-delay: 1400ms;
-}
-.isotope-item:nth-child(15) {
+.isotope-item:nth-child(6) {
     transition-delay: 1500ms;
 }
+.isotope-item:nth-child(7) {
+    transition-delay: 1800ms;
+}
+.isotope-item:nth-child(8) {
+    transition-delay: 2100ms;
+}
+.isotope-item:nth-child(9) {
+    transition-delay: 2400ms;
+}
+.isotope-item:nth-child(10) {
+    transition-delay: 2700ms;
+}
+.isotope-item:nth-child(11) {
+    transition-delay: 3000ms;
+}
+.isotope-item:nth-child(12) {
+    transition-delay: 3300ms;
+}
+.isotope-item:nth-child(13) {
+    transition-delay: 3600ms;
+}
+.isotope-item:nth-child(14) {
+    transition-delay: 3900ms;
+}
+.isotope-item:nth-child(15) {
+    transition-delay: 4100ms;
+}
 .isotope-item:nth-child(16) {
-    transition-delay: 1600ms;
+    transition-delay: 4500ms;
 }
 
+
+/* .scroll-tracker {
+    height: 0.5rem;
+     background-color: var(--clr-primary-400); 
+    background-color: #339BEB;
+    position: fixed;
+    inset: 250px 0 auto;
+    z-index: 99999;
+    transform-origin:  left;
+} */
+
+.scrollBar1 {
+    position: fixed;
+    top: 0;
+    height: 4px;
+    width: 0%;
+    background: #339BEB;
+    transition: width 200ms var(--timing);
+    text-align: right;
+    color: #fff;
+    z-index: 99999;
+}    
+.scrollBar1 span {
+    position: absolute;
+    top: -23px;
+    right: 15px;
+    font-size: 0.7em;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}      
+.scrollBar1 span::after {
+    content: "%";
+    font-size: 0.8em;
+    position: absolute;
+    right: -15px;
+    bottom: 4px;
+    font-weight: 700;
+    opacity: 0.4;
+}
