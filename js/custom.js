@@ -100,7 +100,7 @@ function show(data) {
 										<p>${r.Description}</p>
 										<p>Platform: ${r.Platform}</p>
 										
-										<a href="${r.Link}">Visit Site</a>
+										<a href="${r.Link}" target="_blank">Visit Site</a>
 									</div>
 									<div class="col-md-8">
 										<img src="images/${r.Image}" alt="">
@@ -131,7 +131,7 @@ let text =  [
 	{"ID": 8, "Name" : "Unique Fine Pearls",  	"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "ufp.png", "Link" : "https://www.uniquefpgc.com/" , "Active" : 'active' },
 	{"ID": 9, "Name" : "Begen",  				"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "begen.png", "Link" : "https://www.begen.sg/" , "Active" : 'active' },
 	{"ID": 10, "Name" : "Sona",  					"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "sona.png", "Link" : "https://sona.com.sg/" , "Active" : 'active' },
-	{"ID": 11, "Name" : "Clovers SG",  			"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "clovers.png", "Link" : "https://springbrainykidz.com/" , "Active" : 'active' },
+	{"ID": 11, "Name" : "Clovers SG",  			"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "clovers.png", "Link" : "https://www.clovers.sg/" , "Active" : 'active' },
 	{"ID": 12, "Name" : "Novel Communications",  	"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "novelcomm.png", "Link" : "https://www.novelcomm.com.sg/" , "Active" : 'active' },
 	{"ID": 13, "Name" : "Patmos Bible",  			"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "patmos.png", "Link" : "https://www.georgeannadorai.com.sg/" , "Active" : 'active' },
 	{"ID": 14, "Name" : "Stellar Technology",  	"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "stellar.png", "Link" : "https://www.stellartech.com.sg/" , "Active" : 'active' },
