@@ -430,47 +430,51 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-8">
 						<div class="media testimonial">
-							<div class="media-left">
-								<img src="images/testimonial-2.png" alt="">
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">Thank You!</h3>
-								<blockquote>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequatur quo.</p>
-									<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-								</blockquote>
-							</div>
+							$(document).scroll(function (e) {
+								var scrollAmount = $(window).scrollTop();
+								var documentHeight = $(document).height();
+								var windowHeight = $(window).height();
+								var scrollPercent = (scrollAmount / (documentHeight - windowHeight)) * 100;
+								var roundScroll = Math.round(scrollPercent);
+								
+								// For scrollbar 1
+								$(".scrollBar1").css("width", scrollPercent + "%");
+								$(".scrollBar1 span").text(roundScroll);
+							});
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="media testimonial">
-							<div class="media-left">
-								<img src="images/testimonial-3.png" alt="">
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">Amazing!</h3>
-								<blockquote>
-									<p>Iure aperiam consequatur quo quis exercitationem reprehenderit dolor vel ducimus.</p>
-									<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="media testimonial">
-							<div class="media-left">
-								<img src="images/testimonial-1.png" alt="">
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">Best!</h3>
-								<blockquote>
-									<p>Aperiam consequatur quo quis exercitationem reprehenderit suscipit iste placeat.</p>
-									<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-								</blockquote>
-							</div>
-						</div>
+						.scrollBar1 {
+							position: fixed;
+							top: 0;
+							height: 4px;
+							width: 0%;
+							background: #339BEB;
+							transition: width 200ms var(--timing);
+							text-align: right;
+							color: #fff;
+							z-index: 99999;
+						}    
+						.scrollBar1 span {
+							position: absolute;
+							top: -23px;
+							right: 15px;
+							font-size: 0.7em;
+							font-weight: 500;
+							display: block;
+							text-align: center;
+						}      
+						.scrollBar1 span::after {
+							content: "%";
+							font-size: 0.8em;
+							position: absolute;
+							right: -15px;
+							bottom: 4px;
+							font-weight: 700;
+							opacity: 0.4;
+						}
 					</div>
 				</div>
 			</div>
