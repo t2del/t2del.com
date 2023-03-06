@@ -395,44 +395,18 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div class="media testimonial">
-							<div class="media-left">
-								<img src="images/testimonial-1.png" alt="">
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">You are Amazing!</h3>
-								<blockquote>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequatur quo.</p>
-									<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="media testimonial">
-							<div class="media-left">
-								<img src="images/testimonial-2.png" alt="">
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">Yeah!</h3>
-								<blockquote>
-									<p>Iure aperiam consequatur quo quis exercitationem reprehenderit dolor vel ducimus.</p>
-									<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-								</blockquote>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="media testimonial">
-							<div class="media-left">
-								<img src="images/testimonial-3.png" alt="">
-							</div>
-							<div class="media-body">
-								<h3 class="media-heading">Thank You!</h3>
-								<blockquote>
-									<p>Aperiam consequatur quo quis exercitationem reprehenderit suscipit iste placeat.</p>
-									<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-								</blockquote>
-							</div>
+							<p>const obeserver = new IntersectionObserver((entries) => {</p>
+								<p>    entries.forEach((entry) => {</p>
+								<p>        if(entry.isIntersecting) {</p>
+								<p>            entry.target.classList.add('show');</p>
+								<p>        } else {</p>
+								<p>            entry.target.classList.remove('show');</p>
+								<p>        }</p>
+								<p>    });</p>
+								<p>});</p>
+								
+								<p>const hiddenElements = document.querySelectorAll('.notshow');</p>
+								<p>hiddenElements.forEach((el) => obeserver.observe(el));</p>
 						</div>
 					</div>
 				</div>
