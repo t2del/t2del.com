@@ -476,6 +476,49 @@
 							<p>}</p>
 					</div>
 				</div>
+
+				<div class="row">
+					<div class="col-md-8">
+						<pre>
+							<code>
+								const obeserver = new IntersectionObserver((entries) => {
+									entries.forEach((entry) => {
+										if(entry.isIntersecting) {
+											entry.target.classList.add('show');
+										} else {
+											entry.target.classList.remove('show');
+										}
+									});
+								});
+								
+								const hiddenElements = document.querySelectorAll('.notshow');
+								hiddenElements.forEach((el) => obeserver.observe(el));
+							</code>
+						</pre>
+					</div>
+					<div class="col-md-4">
+						<pre>
+							<code>
+								.notshow {
+									opacity: 0;
+									filter: blur(30px);
+									transform: translateX(-100%);
+									transition: all 1s;
+								}
+								@media(prefers-reduced-motion) {
+									.notshow {
+										transition: none;
+									}
+								}								
+								.show {
+									opacity: 1;
+									filter: blur(0);
+									transform: translateX(0);
+								}
+							</code>
+						</pre>	
+					</div>
+				</div>
 			</div>
 			<!-- section start -->
 			<!-- ================ -->
