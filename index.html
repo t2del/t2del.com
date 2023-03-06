@@ -432,49 +432,48 @@
 				<div class="row">
 					<div class="col-md-8">
 						<div class="media testimonial">
-							$(document).scroll(function (e) {
-								var scrollAmount = $(window).scrollTop();
-								var documentHeight = $(document).height();
-								var windowHeight = $(window).height();
-								var scrollPercent = (scrollAmount / (documentHeight - windowHeight)) * 100;
-								var roundScroll = Math.round(scrollPercent);
-								
-								// For scrollbar 1
-								$(".scrollBar1").css("width", scrollPercent + "%");
-								$(".scrollBar1 span").text(roundScroll);
-							});
+								<p>$(document).scroll(function (e) {</p>
+								<p>	var scrollAmount = $(window).scrollTop();</p>
+								<p>	var documentHeight = $(document).height();</p>
+								<p>	var windowHeight = $(window).height();</p>
+								<p>	var scrollPercent = (scrollAmount / (documentHeight - windowHeight)) * 100;</p>
+								<p>	var roundScroll = Math.round(scrollPercent);</p>
+								<p>	// For scrollbar 1</p>
+								<p>	$(".scrollBar1").css("width", scrollPercent + "%");</p>
+								<p>	$(".scrollBar1 span").text(roundScroll);</p>
+								<p>});</p>
 						</div>
 					</div>
 					<div class="col-md-4">
-						.scrollBar1 {
-							position: fixed;
-							top: 0;
-							height: 4px;
-							width: 0%;
-							background: #339BEB;
-							transition: width 200ms var(--timing);
-							text-align: right;
-							color: #fff;
-							z-index: 99999;
-						}    
-						.scrollBar1 span {
-							position: absolute;
-							top: -23px;
-							right: 15px;
-							font-size: 0.7em;
-							font-weight: 500;
-							display: block;
-							text-align: center;
-						}      
-						.scrollBar1 span::after {
-							content: "%";
-							font-size: 0.8em;
-							position: absolute;
-							right: -15px;
-							bottom: 4px;
-							font-weight: 700;
-							opacity: 0.4;
-						}
+							<p>.scrollBar1 {</p>
+							<p>    position: fixed;</p>
+							<p>    top: 0;</p>
+							<p>    height: 4px;</p>
+							<p>    width: 0%;</p>
+							<p>    background: #339BEB;</p>
+							<p>    transition: width 200ms var(--timing);</p>
+							<p>    text-align: right;</p>
+							<p>    color: #fff;</p>
+							<p>    z-index: 99999;</p>
+							<p>}    </p>
+							<p>.scrollBar1 span {</p>
+							<p>    position: absolute;</p>
+							<p>    top: -23px;</p>
+							<p>    right: 15px;</p>
+							<p>    font-size: 0.7em;</p>
+							<p>    font-weight: 500;</p>
+							<p>    display: block;</p>
+							<p>    text-align: center;</p>
+							<p>}</p>
+							<p>.scrollBar1 span::after {</p>
+							<p>    content: "%";</p>
+							<p>    font-size: 0.8em;</p>
+							<p>    position: absolute;</p>
+							<p>    right: -15px;</p>
+							<p>    bottom: 4px;</p>
+							<p>    font-weight: 700;</p>
+							<p>    opacity: 0.4;</p>
+							<p>}</p>
 					</div>
 				</div>
 			</div>
