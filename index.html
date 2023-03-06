@@ -394,9 +394,9 @@
 				<h1 id="clients" class="title text-center">Clients</h1>
 				<div class="space"></div>
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-8">
 						<div class="media testimonial">
-							<p>const obeserver = new IntersectionObserver((entries) => {</p>
+								<p>const obeserver = new IntersectionObserver((entries) => {</p>
 								<p>    entries.forEach((entry) => {</p>
 								<p>        if(entry.isIntersecting) {</p>
 								<p>            entry.target.classList.add('show');</p>
@@ -409,6 +409,24 @@
 								<p>const hiddenElements = document.querySelectorAll('.notshow');</p>
 								<p>hiddenElements.forEach((el) => obeserver.observe(el));</p>
 						</div>
+					</div>
+					<div class="col-md-4">
+							<p>.notshow {</p>
+							<p>    opacity: 0;</p>
+							<p>    filter: blur(30px);</p>
+							<p>    transform: translateX(-100%);</p>
+							<p>    transition: all 1s;</p>
+							<p>}</p>
+							<p>@media(prefers-reduced-motion) {</p>
+							<p>    .notshow {</p>
+							<p>        transition: none;</p>
+							<p>    }</p>
+							<p>}</p>
+							<p>.show {</p>
+							<p>    opacity: 1;</p>
+							<p>    filter: blur(0);</p>
+							<p>    transform: translateX(0);</p>
+							<p>}</p>
 					</div>
 				</div>
 				<div class="row">
