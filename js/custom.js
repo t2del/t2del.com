@@ -121,23 +121,26 @@ function show(data) {
     document.getElementById("portfolio-list").innerHTML = tab;
 }
 let text =  [
-	{"ID": 1, "Name" : "Jinders",  				"Description" : "Front-End and Back-end Development", "Platform" : "Wordpress / Woocommerce", "Image" : "jinders.png", "Link" : "https://www.jinders.com.sg/", "Active" : 'active'},
-	{"ID": 2, "Name" : "Spring Brainy Kidz",  	"Description" : "Front-End and Back-end Development", "Platform" : "Wordpress / Woocommerce", "Image" : "sbk.png", "Link" : "https://springbrainykidz.com/", "Active" : 'active'},
+	{"ID": 1, "Name" : "Jinders",  					"Description" : "Front-End and Back-end Development", "Platform" : "Wordpress / Woocommerce", "Image" : "jinders.png", "Link" : "https://www.jinders.com.sg/", "Active" : 'active'},
+	{"ID": 2, "Name" : "Spring Brainy Kidz",  		"Description" : "Front-End and Back-end Development", "Platform" : "Wordpress / Woocommerce", "Image" : "sbk.png", "Link" : "https://springbrainykidz.com/", "Active" : 'active'},
 	{"ID": 3, "Name" : "Marvid International",  	"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "marvid.png", "Link" : "https://www.marvid.com.sg/", "Active" : 'active'},
 	{"ID": 4, "Name" : "D'Montessori",  			"Description" : "Front-End and Back-end Development", "Platform" : "Wordpress / Woocommerce", "Image" : "dmontessori.png", "Link" : "https://dmontessori.com.sg/" , "Active" : 'active' },
-	{"ID": 5, "Name" : "New Peng Hiang",  		"Description" : "Front-End and Back-end Development", "Platform" : "Wordpress / Woocommerce", "Image" : "nph.png", "Link" : "https://www.newpenghiang.com/" , "Active" : 'active' },
+	{"ID": 5, "Name" : "New Peng Hiang",  			"Description" : "Front-End and Back-end Development", "Platform" : "Wordpress / Woocommerce", "Image" : "nph.png", "Link" : "https://www.newpenghiang.com/" , "Active" : 'active' },
 	{"ID": 6, "Name" : "Asia Marketplace",  		"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "asiamarketplace.png", "Link" : "https://www.asiamarketspace.com.sg/" , "Active" : 'active' },
-	{"ID": 7, "Name" : "Sis Premium Meats",  	"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "spm.png", "Link" : "https://www.sispremium.com/" , "Active" : 'active' },
-	{"ID": 8, "Name" : "Unique Fine Pearls",  	"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "ufp.png", "Link" : "https://www.uniquefpgc.com/" , "Active" : 'active' },
-	{"ID": 9, "Name" : "Begen",  				"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "begen.png", "Link" : "https://www.begen.sg/" , "Active" : 'active' },
+	{"ID": 7, "Name" : "Sis Premium Meats",  		"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "spm.png", "Link" : "https://www.sispremium.com/" , "Active" : 'active' },
+	{"ID": 8, "Name" : "Unique Fine Pearls",  		"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "ufp.png", "Link" : "https://www.uniquefpgc.com/" , "Active" : 'active' },
+	{"ID": 9, "Name" : "Begen",  					"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "begen.png", "Link" : "https://www.begen.sg/" , "Active" : 'active' },
 	{"ID": 10, "Name" : "Sona",  					"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "sona.png", "Link" : "https://sona.com.sg/" , "Active" : 'active' },
-	{"ID": 11, "Name" : "Clovers SG",  			"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "clovers.png", "Link" : "https://www.clovers.sg/" , "Active" : 'active' },
+	{"ID": 11, "Name" : "Clovers SG",  				"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "clovers.png", "Link" : "https://www.clovers.sg/" , "Active" : 'active' },
 	{"ID": 12, "Name" : "Novel Communications",  	"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "novelcomm.png", "Link" : "https://www.novelcomm.com.sg/" , "Active" : 'active' },
 	{"ID": 13, "Name" : "Patmos Bible",  			"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "patmos.png", "Link" : "https://www.georgeannadorai.com.sg/" , "Active" : 'active' },
-	{"ID": 14, "Name" : "Stellar Technology",  	"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "stellar.png", "Link" : "https://www.stellartech.com.sg/" , "Active" : 'active' },
+	{"ID": 14, "Name" : "Stellar Technology",  		"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "stellar.png", "Link" : "https://www.stellartech.com.sg/" , "Active" : 'active' },
 	{"ID": 15, "Name" : "DomesticOne",  			"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "domestic1.png", "Link" : "https://2021.domestic1.sg/" , "Active" : 'active' },
-	{"ID": 16, "Name" : "Shang Antique",  		"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "shang.png", "Link" : "https://www.shangantique.com.sg/" , "Active" : 'active' },
-	{"ID": 17, "Name" : "Test",  		"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "shang.png", "Link" : "https://www.test.com.sg/" , "Active" : 'hide' },	
+	{"ID": 16, "Name" : "Shang Antique",  			"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "shang.png", "Link" : "https://www.shangantique.com.sg/" , "Active" : 'active' },
+	{"ID": 17, "Name" : "Agogo",  					"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "agogo.png", "Link" : "https://www.agogo.com.sg/" , "Active" : 'active' },
+	{"ID": 18, "Name" : "Unitronics Component",  	"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "unitronic.png", "Link" : "https://www.unitronic.com.sg/" , "Active" : 'active' },
+	{"ID": 19, "Name" : "Griddle & Grinder",  		"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "griddler.png", "Link" : "https://www.griddlerngrinder.com/" , "Active" : 'active' },
+	{"ID": 20, "Name" : "MF Media",  				"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "mfmedia.png", "Link" : "https://mfmedia.sg/" , "Active" : 'active' },	
 ];
 show(text);
 
