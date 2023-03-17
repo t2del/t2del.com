@@ -101,6 +101,18 @@ html {
 .isotope-item:nth-child(16) {
     transition-delay: 4500ms;
 }
+.isotope-item:nth-child(17) {
+    transition-delay: 4800ms;
+}
+.isotope-item:nth-child(18) {
+    transition-delay: 5100ms;
+}
+.isotope-item:nth-child(19) {
+    transition-delay: 5400ms;
+}
+.isotope-item:nth-child(20) {
+    transition-delay: 5800ms;
+}
 
 
 /* .scroll-tracker {
