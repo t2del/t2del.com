@@ -83,7 +83,7 @@ function show(data) {
 							<span>Web Development</span>
 						</a>
 					</div>
-					<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">${r.Name}</a>
+					<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-${r.ID}">${r.Name}</a>
 				</div>								
 				<!-- Modal -->
 				<div class="modal fade" id="project-${r.ID}" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
