@@ -120,6 +120,18 @@ function show(data) {
     // Setting innerHTML as tab variable
     document.getElementById("portfolio-list").innerHTML = tab;
 }
+
+// Function to define innerHTML for HTML table
+function show_skills(data) {
+    let tab = ``;
+    // Loop to access all rows 
+    for (let r of data) {
+		tab += `<li><i class="fa fa-caret-right pr-10 text-colored"></i> ${r.Name}</li>`;		
+    }
+    // Setting innerHTML as tab variable
+    document.getElementById("skills-list").innerHTML = tab;
+}
+
 let text =  [
 	{"ID": 1, "Name" : "Jinders",  					"Description" : "Front-End and Back-end Development", "Platform" : "Wordpress / Woocommerce", "Image" : "jinders.png", "Link" : "https://www.jinders.com.sg/", "Active" : 'active'},
 	{"ID": 2, "Name" : "Spring Brainy Kidz",  		"Description" : "Front-End and Back-end Development", "Platform" : "Wordpress / Woocommerce", "Image" : "sbk.png", "Link" : "https://springbrainykidz.com/", "Active" : 'active'},
@@ -142,9 +154,70 @@ let text =  [
 	{"ID": 19, "Name" : "Griddle & Grinder",  		"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "griddler.png", "Link" : "https://www.griddlerngrinder.com/" , "Active" : 'active' },
 	{"ID": 20, "Name" : "MF Media",  				"Description" : "Front-End and Back-end Development", "Platform" : "OpenCart", "Image" : "mfmedia.png", "Link" : "https://mfmedia.sg/" , "Active" : 'active' },	
 ];
+let skills =  [
+	{
+		"ID": 1, 
+		"Name" : "PHP",
+		"Active" : 'active'
+	},
+	{
+		"ID": 2, 
+		"Name" : "HTML",
+		"Active" : 'active'
+	},
+	{
+		"ID": 3, 
+		"Name" : "CSS",
+		"Active" : 'active'
+	},
+	{
+		"ID": 4, 
+		"Name" : "JavaScript (jQuery, Ajax, Json)",
+		"Active" : 'active'
+	},
+	{
+		"ID": 5, 
+		"Name" : "Bootstrap",
+		"Active" : 'active'
+	},
+	{
+		"ID": 6, 
+		"Name" : "Sass / Less",
+		"Active" : 'active'
+	},
+	{
+		"ID": 7, 
+		"Name" : " WordPress/ Woocommerce",
+		"Active" : 'active'
+	},
+	{
+		"ID": 8, 
+		"Name" : "MySQL",
+		"Active" : 'active'
+	},
+	{
+		"ID": 9, 
+		"Name" : "OpenCart",
+		"Active" : 'active'
+	},
+	{
+		"ID": 10, 
+		"Name" : "Laravel",
+		"Active" : 'active'
+	},
+	{
+		"ID": 11, 
+		"Name" : "RestAPI",
+		"Active" : 'active'
+	},
+	{
+		"ID": 12, 
+		"Name" : "GIT",
+		"Active" : 'active'
+	},
+];
 show(text);
-
-
+show_skills(skills);
 
 const obeserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
