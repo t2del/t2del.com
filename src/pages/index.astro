@@ -1,0 +1,148 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/Container.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import { getCollection, getEntry } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+import CustomModal from '../components/Modal.astro';
+import ContactForm from '../components/forms/ContactForm.astro';
+
+// import CustomModal from '../components/ModalButton.astro';
+import { Image } from "astro:assets"
+import { Debug } from 'astro:components';
+
+	const posts_blog = (await getCollection('blog'))
+	.filter(post => post.data.status == 'active') // Filter out active posts
+  	.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()).reverse()
+	.slice(0, 3); // Limit to the first 3 posts
+
+	const posts_project = (await getCollection('project'))
+	.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()).reverse();
+
+	const posts_project_featured = (await getCollection('project'))
+	.filter(post => post.data.status == 'featured') // Filter out active posts
+	.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());	
+
+---
+
+<Layout title="t2del" meta_description="t2del" body_class="home">
+	<HomeHeroSection />
+	<section id="about">
+		<Container className="container-about">
+			<h2 class="notshow fromleft">About <span class="text-gradient">T2del</span></h2>
+
+			<div class="link-card-grid">
+				<div class="photo notshow blur">
+					<Image src="https://t2del.github.io/images/den.jpg" width={400} height={400} format='webp' alt={'Dennis Macapagal'} class:list={'profile-photo'} loading="eager"></Image>
+				</div>
+				<div class="description ">
+					<p class=" notshow blur">
+						A <code>Full-Stack</code> Developer with more than 10 years of relevant experience in web programming. Bringing up-to-date industry skills in front-end and back-end technology such as PHP, HTML, CSS, JavaScript, MySQL and hands-on experience with CMS such as WordPress. Detail-oriented and motivated to drive project completion on target with exceptional quality and guaranteed client satisfaction.
+					</p>
+					<ul class="list-unstyled list-boxed notshow blur" id="skills-list">
+						<li>PHP</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Bootstrap</li>
+						<li>Sass / Less</li>
+						<li>JavaScript (jQuery, Ajax, Json)</li>
+						<li>MySQL</li>
+						<li>WordPress/ Woocommerce</li>							
+						<li>OpenCart</li>
+						<li>Laravel</li>
+						<li>RestAPI</li>
+						<li>GIT</li>
+						<li><a href="https://astro.build/">Astro.Build</a></li>
+					</ul>
+				</div>				
+			</div>					
+		</Container>
+	</section>
+
+	
+		
+	<section id="portfolio">			
+		<Container className="container-portfolio">
+			<h2 class="notshow fromleft"> <span class="text-gradient">Portfolio</span></h2>
+			<ul role="list" class="link-card-grid featured">
+				{
+					posts_project_featured.map((post) => (
+						<li class="notshow blur portfolio-list"  id={post.slug}>
+							<CustomModal 
+								title={post.data.title} 
+								slug={post.slug} 
+								siteURL={post.data.siteUrl} 
+								classText="animate_underline" 
+								imgsrc={post.data.heroImage}
+								imgsrcScroll={post.data.heroImageScroll}
+								role={post.data.role}
+								platform={post.data.platform}
+							/>
+						</li>
+					))
+				}
+			</ul>
+			<ul role="list" class="link-card-grid">
+				{
+					posts_project.map((post) => {
+						if (post.data.status == 'active') {
+							return (
+								<li class="notshow blur portfolio-list"  id={post.slug}>
+									<CustomModal 
+										title={post.data.title} 
+										slug={post.slug}
+										siteURL={post.data.siteUrl} 
+										classText="animate_underline" 
+										imgsrc={post.data.heroImage}
+										imgsrcScroll={post.data.heroImageScroll}
+										role={post.data.role}
+										platform={post.data.platform}
+									/>
+								</li>
+							);
+						}
+						return null;
+					})
+				}
+			</ul>
+								
+		</Container>
+	</section>
+
+	<section id="blog">
+		<Container className="container-blog">
+			<h2 class="notshow fromleft"> <span class="text-gradient">Blog</span></h2>
+			<ul role="list" class="link-card-grid">
+				{
+					posts_blog.map((post) => (
+						<li class="notshow fromtop">
+							<a href={`/blog/${post.slug}/`}>
+								<Image src={post.data.heroImage} 
+									width={700} 
+									height={400} 
+									alt={post.data.imgalt}
+									title={post.data.imgalt}
+									loading="eager">									
+								</Image>
+								<h4 class="title">{post.data.title}</h4>
+								<p class="date">
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+							</a>							
+						</li>						
+					))
+				}
+			</ul>				
+		</Container>			
+	</section>
+
+	<section id="contact-us">			
+		<Container className="container-contact-us">			
+			<div class="feedback-form">
+				<h2 class="notshow fromleft"> <span class="text-gradient">Contact Form</span></h2>
+				<ContactForm></ContactForm>
+			</div>		
+		</Container>
+							
+	</section>
+</Layout>
