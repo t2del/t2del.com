@@ -9,7 +9,7 @@ export const nav = [
 	// },
 	{
 	  title: 'Blog',
-	  slug: '/blog',
+	  slug: '/blog/',
 	//   submenu: [
 	// 	{
 	// 	  	title: 'First post',
@@ -31,7 +31,7 @@ export const nav = [
 	// },
 	{
 		title: 'Contact',
-		slug: '/contact-us',
+		slug: '/contact-us/',
 	  },
   ];
 
