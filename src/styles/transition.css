@@ -3,16 +3,16 @@
 	transition: all 1s;
 }
 .notshow.fromleft {
-    transform: translateX(-5%);
+    transform: translateX(-25%);
 }
 .notshow.fromright {
-    transform: translateX(5%);
+    transform: translateX(25%);
 }
 .notshow.fromtop {
-    transform: translateY(-30px);
+    transform: translateY(-50px);
 }
 .notshow.frombottom {
-    transform: translateY(30px);
+    transform: translateY(50px);
 }
 .notshow.blur {
 	filter: blur(10px);
