@@ -5,6 +5,7 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 import { getCollection, getEntry } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 import CustomModal from '../components/Modal.astro';
+import Card from '../components/Card.astro';
 import ContactForm from '../components/forms/ContactForm.astro';
 
 // import CustomModal from '../components/ModalButton.astro';
@@ -87,11 +88,17 @@ import { Debug } from 'astro:components';
 					posts_project.map((post) => {
 						if (post.data.status == 'active') {
 							return (
+								// <Card
+								// 	title={post.data.title} 
+								// 	href={`/project/${post.slug}/`}
+								// 	imgsrc={post.data.heroImage}
+								// 	classText="animate_underline" 
+								// ></Card>
 								<li class="notshow blur portfolio-list"  id={post.slug}>
 									<CustomModal 
 										title={post.data.title} 
 										slug={post.slug}
-										siteURL={post.data.siteUrl} 
+										siteURL={post.data.slug} 
 										classText="animate_underline" 
 										imgsrc={post.data.heroImage}
 										imgsrcScroll={post.data.heroImageScroll}

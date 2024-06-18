@@ -26,7 +26,7 @@ const { Content } = await post.render();
 		<Container className="custom-class">
 			<div class="prose">
 				<div class="title">
-					<div class="date"><FormattedDate date={post.data.pubDate} /></div>
+					<div class="date hide"><FormattedDate date={post.data.pubDate} /></div>
 					<h1>{post.data.title}</h1>
 					<hr />
 				</div>
@@ -35,7 +35,7 @@ const { Content } = await post.render();
 					<div>Platform: <span>{post.data.platform}</span></div>
 					<a href={post.data.siteUrl} rel="noopener noreferrer"><span>Visit Site</span></a>
 				</div>
-				<Content />
+				<!-- <Content /> -->
 			</div>
 		</Container>
 	</article>

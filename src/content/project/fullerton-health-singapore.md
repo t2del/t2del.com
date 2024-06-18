@@ -1,9 +1,9 @@
 ---
-title: 'FullertonHealth Singapore'
+title: 'Fullerton Health Singapore'
 desc: 'Lorem ipsum dolor sit amet'
 heroImage: '/project/fhg-singapore.jpg'
-heroImageScroll: '/project/scrollable/FH-SG.png'
-siteUrl:  'https://www.fullertonhealth.com/sg'
+heroImageScroll: '/project/scrollable/FH-SG.jpg'
+siteUrl:  'https://www.fullertonhealth.com/sg/'
 role: 'Front-End and Back-end Development'
 platform: 'WordPress / Elementor Pro'
 pubDate: 'Mar 06 2023'
