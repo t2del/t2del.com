@@ -1,9 +1,9 @@
 ---
-title: 'Fullerton Health Philippines'
+title: 'Fullerton Health Hong Kong'
 desc: 'Lorem ipsum dolor sit amet'
-heroImage: '/project/fhg-ph.jpg'
-heroImageScroll: '/project/scrollable/FH-PH.jpg'
-siteUrl:  'https://www.fullertonhealth.com/ph/'
+heroImage: '/project/fhg-hk.jpg'
+heroImageScroll: '/project/scrollable/FH-HK.jpg'
+siteUrl:  'https://www.fullertonhealth.com/hk/'
 role: 'Front-End and Back-end Development'
 platform: 'WordPress / Elementor Pro'
 pubDate: 'May 06 2024'

@@ -1,9 +1,9 @@
 ---
-title: 'Fullerton Health Philippines'
+title: 'Urban Rehab'
 desc: 'Lorem ipsum dolor sit amet'
-heroImage: '/project/fhg-ph.jpg'
-heroImageScroll: '/project/scrollable/FH-PH.jpg'
-siteUrl:  'https://www.fullertonhealth.com/ph/'
+heroImage: '/project/ur.jpg'
+heroImageScroll: '/project/scrollable/UR.jpg'
+siteUrl:  'https://urbanrehab.com.sg/'
 role: 'Front-End and Back-end Development'
 platform: 'WordPress / Elementor Pro'
 pubDate: 'May 06 2024'
