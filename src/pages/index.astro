@@ -24,9 +24,10 @@ import { Debug } from 'astro:components';
 	.filter(post => post.data.status == 'featured') // Filter out active posts
 	.sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());	
 
+
 ---
 
-<Layout title="t2del" meta_description="t2del" body_class="home">
+<Layout title="t2del" meta_description="Dennis Macapagal" body_class="home">
 	<HomeHeroSection />
 	<section id="about">
 		<Container className="container-about">
@@ -88,17 +89,11 @@ import { Debug } from 'astro:components';
 					posts_project.map((post) => {
 						if (post.data.status == 'active') {
 							return (
-								// <Card
-								// 	title={post.data.title} 
-								// 	href={`/project/${post.slug}/`}
-								// 	imgsrc={post.data.heroImage}
-								// 	classText="animate_underline" 
-								// ></Card>
 								<li class="notshow blur portfolio-list"  id={post.slug}>
 									<CustomModal 
 										title={post.data.title} 
 										slug={post.slug}
-										siteURL={post.data.slug} 
+										siteURL={post.data.siteUrl} 
 										classText="animate_underline" 
 										imgsrc={post.data.heroImage}
 										imgsrcScroll={post.data.heroImageScroll}
