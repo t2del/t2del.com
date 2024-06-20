@@ -301,7 +301,7 @@ h2 {
 .text-gradient {
 	background-image: var(--accent-gradient);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: #00000080;
+	/* -webkit-text-fill-color: #00000080; */
 	background-size: 400%;
 	background-position: 0%;
 }
