@@ -1,6 +1,6 @@
 .notshow {
 	opacity: 0;
-	transition: all 1s;
+	transition: all 1s ease-in;
 }
 .notshow.fromleft {
     transform: translateX(-25%);
