@@ -24,7 +24,7 @@
 	/* Theme Layout */
 	--section-margin: 3rem;
 	--theme-grid-gap: 1rem;
-	--container-max-width: 1440px;
+	--container-max-width: 1640px;
 	--container-max-width-narrow: 960px;
 	--container-padding: 60px 1rem;
 
@@ -62,13 +62,13 @@
 	--theme-transition: 0.2s ease-in-out;
 
 	/* Theme Layout */
-	--section-margin: 3rem;
+	/* --section-margin: 3rem;
 	--theme-grid-gap: 1rem;
-	--container-max-width: 1440px;
+	--container-max-width: 1640px;
 	--container-max-width-narrow: 960px;
 	--container-padding: 0 1rem;
 
-	--theme-blog-post-header-width: 1200px;
+	--theme-blog-post-header-width: 1200px; */
 }
 
 [data-theme='dark'] {
