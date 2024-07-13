@@ -15,15 +15,16 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'project'>;
 
 const post = Astro.props;
-const { Content } = await post.render();
+
+var hasimgsrcScroll = post.data.heroImageScroll ? post.data.heroImageScroll : post.data.heroImage;
 ---
 
-<Layout title={`${post.data.title} | t2del` } meta_description={`${post.data.description}` } body_class="project inner index something you wish to add for any use">
+<Layout title={`${post.data.title} | Project | by t2del` } meta_description={`${post.data.desc}` } body_class="project inner index something you wish to add for any use">
 	<article>
 		<div class="hero-image notshow blur">
-			{post.data.heroImage && <img width={1920} height={750} src={post.data.heroImage} alt={post.data.imgalt} />}
+			{hasimgsrcScroll && <img src={hasimgsrcScroll} alt={post.data.imgalt} />}
 		</div>
-		<Container className="custom-class">
+		<Container className="project-details">
 			<div class="prose">
 				<div class="title">
 					<div class="date hide"><FormattedDate date={post.data.pubDate} /></div>
@@ -35,8 +36,16 @@ const { Content } = await post.render();
 					<div>Platform: <span>{post.data.platform}</span></div>
 					<a href={post.data.siteUrl} rel="noopener noreferrer"><span>Visit Site</span></a>
 				</div>
-				<!-- <Content /> -->
+
 			</div>
 		</Container>
 	</article>
 </Layout>
+
+<style>
+	.hero-image {
+		max-height: 500px;
+		overflow: auto;
+	}
+
+</style>
