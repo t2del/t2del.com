@@ -25,6 +25,24 @@ export const nav = [
 	// 	},
 	//   ],
 	},
+	{
+		title: 'Project',
+		slug: '/project/',
+	  //   submenu: [
+	  // 	{
+	  // 	  	title: 'First post',
+	  // 	  	slug: '/blog/first-post',
+	  // 	},
+	  // 	{
+	  // 		title: 'Second post',
+	  // 		slug: '/blog/second-post',
+	  // 	},
+	  // 	{
+	  // 		title: 'Third post',
+	  // 		slug: '/blog/third-post',
+	  // 	},
+	  //   ],
+	  },
 	// {
 	//   title: 'Portfolio',
 	//   slug: '/portfolio',
