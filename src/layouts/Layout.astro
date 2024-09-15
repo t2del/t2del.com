@@ -23,7 +23,7 @@ interface Props {
 }
 //const { title, meta_description, body_class } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const { title, meta_description, image = '/favicon.ico', body_class } = Astro.props;
+const { title, meta_description, image, body_class } = Astro.props;
 ---
 
 <!doctype html>
