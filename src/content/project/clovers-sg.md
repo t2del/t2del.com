@@ -1,6 +1,5 @@
 ---
-title: 'Clovers SG
-'
+title: 'Clovers SG'
 desc: 'Lorem ipsum dolor sit amet'
 heroImage: '/project/clovers.jpg'
 siteUrl:  'https://www.clovers.sg/'

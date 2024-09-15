@@ -22,7 +22,7 @@ var hasimgsrcScroll = post.data.heroImageScroll ? post.data.heroImageScroll : po
 <Layout title={`${post.data.title} | Project | by t2del` } meta_description={`${post.data.desc}` } body_class="project inner index something you wish to add for any use" image={`${post.data.heroImage}` }>
 	<article>
 		<div class="hero-image notshow blur">
-			{hasimgsrcScroll && <img src={hasimgsrcScroll} alt={post.data.imgalt} />}
+			{hasimgsrcScroll && <img src={hasimgsrcScroll} alt={post.data.title} />}
 		</div>
 		<Container className="project-details">
 			<div class="prose">
