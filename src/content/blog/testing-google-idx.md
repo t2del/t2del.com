@@ -1,11 +1,11 @@
 ---
 pubDate: 'Dec 14 2023'
-heroImage: '/blog/blog/blog-placeholder-3.jpg'
+heroImage: '/blog/blog-placeholder-3.jpg'
 imgalt: 'Test Google IDX'
 title: Test Google IDX
 author: T2del
 image: {
-  src: "/blog/blog/blog-placeholder-3.jpg",
+  src: "/blog/blog-placeholder-3.jpg",
   alt: "A picture of a coder",
 }
 description: Have you ever wondered what the most important items of life are? Well, wonder no more!
